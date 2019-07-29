@@ -1,0 +1,20 @@
+.hero-section{
+  background: url("../img/hero-section-bg-320.png") no-repeat;
+  background-size: cover;
+  padding: 17px 20px 93px;
+  letter-spacing: 0.057em;
+
+  &__page-slogan{
+    font-size: 1.5rem;
+    color: $color-white;
+    margin-bottom: 9px;
+
+
+  }
+  &__sub-slogan{
+    color: #a6d6e0;
+    font-size: 1.4rem;
+
+  }
+
+}

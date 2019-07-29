@@ -1,0 +1,51 @@
+.menu-links{
+  padding-top: 4px;
+  @include grid-1fr-3row;
+  grid-gap: 1px;
+  &__link-item{
+    width: 100%;
+    @include flexContainer(center);
+    color: $color-white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  &__link-img{
+    @include flexContainer(center);
+    padding-top: 25px;
+    padding-bottom: 29px;
+    width: 77.81%;
+    &--pizza-delivery{
+      background-image: url("../img/Pizza delivery.png");
+      @include BGcover(bottom);
+    }
+    &--ua-ux-salads{
+      background-image: url("../img/UA_UX Salads.png");
+      @include BGcover(bottom);
+    }
+    &--desserts{
+      background-image: url("../img/Desserts.png");
+      @include BGcover(20%);
+    }
+  }
+  &__arrow-container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-color: $bg-color-green;
+    width: calc(100% - 77.81%);
+    padding-top:32px;
+    padding-bottom: 36px;
+
+
+  }
+  &__arrow-right{
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid $color-white;
+    border-right: 2px solid $color-white;
+    transform: rotate(45deg);
+  }
+
+
+}

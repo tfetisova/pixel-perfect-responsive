@@ -1,0 +1,80 @@
+.page-header{
+  background-color: #373c3f;
+  font-size: 1.2rem;
+  color:$color-white;
+  font-family: 'Montserrat', sans-serif;
+  @include flexContainer(space-between);
+  &__title{
+    margin-right: 40%;
+    padding: 12px 19px;
+  }
+  &__burger-menu{
+    @include grid-1fr-3row;
+    background-color: #202529;
+    grid-gap: 2px;
+    padding: 13px;
+    cursor: pointer;
+    position: relative;
+  }
+  &__stripes {
+    width: 16px;
+    height: 2px;
+    background-color: $color-white;
+  }
+  &__cross {
+    display: none;
+    margin: -4px 10px -5px;
+    background: $color-white;
+    height: 14px;
+    position: relative;
+    width: 2px;
+    transform: rotate(45deg);
+  }
+  &__cross:after{
+    background: $color-white;
+    content: "";
+    height: 2px;
+    left: -6px;
+    position: absolute;
+    top: 6px;
+    width: 14px;
+  }
+
+  &__menu{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 35px;
+  }
+
+  &__menu-list{
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    list-style: none;
+  }
+  &__menu-item{
+    width: 183px;
+  }
+
+  &__menu-link:link,
+  &__menu-link:visited{
+    @include flexContainer(flex-start);
+    padding: 14px;
+    width: 100%;
+    text-decoration: none;
+    color: #444444;
+    font-size: 1.2rem;
+    border: 1px solid #e1e1e1;
+  }
+  &__menu-link:hover,
+  &__menu-link:active{
+    background-color: #f5f5f5;
+  }
+
+  &__logo{
+    display: none;
+  }
+
+
+}

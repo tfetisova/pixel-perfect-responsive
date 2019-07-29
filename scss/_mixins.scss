@@ -1,0 +1,15 @@
+@mixin flexContainer($justify){
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+@mixin grid-1fr-3row{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+
+}
+@mixin BGcover($bg-position){
+  background-size: cover;
+  background-position-y: $bg-position;
+}

@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixins";
+html{
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+*, :after, :before{
+  box-sizing: inherit;
+}
+body{
+  color: $color-dark;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.container{
+  //max-width: 340px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+@import "sections/page-header";
+@import "sections/hero-section";
+@import "sections/menu-links";
+@import "sections/main-menu";
+@import "sections/page-footer";
+@import "media/all-media";
